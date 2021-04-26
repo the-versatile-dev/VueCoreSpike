@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Vue Spike Two</h1>
+    <div id="vueMain">
+
+
+        {{ message }}
+
+
+    </div>
+</div>
+@section scripts {
+
+    <partial name="_VueScript" />
+    <script>
+        var app = new Vue({
+            el: '#vueMain',
+            data: {
+                message: 'Hello Vue.js i hope!'
+            }
+
+        });
+    </script>
+}
