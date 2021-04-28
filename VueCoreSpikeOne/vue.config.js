@@ -1,17 +1,30 @@
+
 module.exports = {
     outputDir: './wwwroot/dist',
     filenameHashing: false,
 
     configureWebpack: {
-    optimization: {
-        splitChunks: false
+        optimization: {
+            splitChunks: false
+        },
+        resolve: {
+            alias: {
+                'vue$': 'vue/dist/vue.esm.js'
+            }
+            },
+        devServer: {
+            proxy: {
+                "^/api": {
+                    target: "http://localhost:44360",
+                    changeOrigin: true,
+                    logLevel: "debug"
+                    
+                }
+            }
+        },
+        devtool: 'eval-source-map'
     },
-    resolve: {
-        alias: {
-            'vue$': 'vue/dist/vue.esm.js'
-        }
-    }
-},
+
 
     transpileDependencies: [
       'vuetify'
