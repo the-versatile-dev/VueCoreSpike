@@ -3,15 +3,19 @@
         <div v-if="users.length === 0">
             Loading...
         </div>
-
-        <div class="container">
-            <div class="row" v-if="users.length > 0">
-                <div class="col-md-3" v-for="user in users" v-bind:key="user.id">
-                    <user-card :user="user"></user-card>
+        <v-sheet :color="`grey`" class="pa-3">
+            <v-skeleton-loader class="mx-auto" type="card-avatar">
+                <div class="container">
+                    <div class="row" v-if="users.length > 0">
+                        <div class="col-md-3" v-for="user in users" v-bind:key="user.id">
+                            <user-card :user="user"></user-card>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
+            </v-skeleton-loader>
+        </v-sheet>
+        
     </div>
 </template>
 <script>import axios from 'axios';
