@@ -9,7 +9,7 @@
                 <thead>
                     <tr>
                         <td>Name</td>
-                        <td>Email1</td>
+                        <td>Email</td>
                         <td>Phone</td>
                         <td>Website</td>
                     </tr>

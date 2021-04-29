@@ -13,13 +13,17 @@ module.exports = {
             }
             },
         devServer: {
-            proxy: {
-                "^/api": {
-                    target: "http://localhost:44360",
-                    changeOrigin: true,
-                    logLevel: "debug"
+            //proxy: {
+            //    "^/api": {
+            //        target: "http://localhost:44360",
+            //        changeOrigin: true,
+            //        logLevel: "debug"
                     
-                }
+            //    }
+            //},
+            clientLogLevel: 'info',
+            watchOptions: {
+                poll: true
             }
         },
         devtool: 'eval-source-map'

@@ -55,3 +55,4 @@ _ReSharper*/
 # Editor settings
 .vscode
 /wwwroot/dist/js/app.js
+/VueCoreMVCSpikeThree/npm
