@@ -23,10 +23,16 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="VueGrid">Vue Grid Example</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Counter">Vue Counter</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Cards Components Example</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="VueGrid">Vue Grid </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Vue Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Jokes">Dad Jokes</a>
                         </li>
                     </ul>
                 </div>
@@ -35,7 +41,7 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            <div id="appVue">
+            <div id="app">
                 @RenderBody()
             </div>
         </main>

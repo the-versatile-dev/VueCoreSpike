@@ -26,7 +26,7 @@
             </table>
         </div>
         <v-data-table :headers="headers" :items="users" :items-per-page="5" class="elevation-1"></v-data-table>
-    </v-app>
+    </v-app>   
 </template>
 
 <script>

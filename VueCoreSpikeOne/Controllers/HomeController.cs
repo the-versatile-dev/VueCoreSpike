@@ -35,7 +35,7 @@ namespace VueCoreSpikeOne.Controllers
             return View();
         }
 
-        public IActionResult Components()
+        public IActionResult Counter()
         {
             return View();
         }
