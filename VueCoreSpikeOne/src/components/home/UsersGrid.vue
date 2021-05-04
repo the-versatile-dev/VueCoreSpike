@@ -9,7 +9,7 @@
                 <thead>
                     <tr>
                         <td>Name</td>
-                        <td>Email1</td>
+                        <td>Email</td>
                         <td>Phone</td>
                         <td>Website</td>
                     </tr>
@@ -26,7 +26,7 @@
             </table>
         </div>
         <v-data-table :headers="headers" :items="users" :items-per-page="5" class="elevation-1"></v-data-table>
-    </v-app>
+    </v-app>   
 </template>
 
 <script>

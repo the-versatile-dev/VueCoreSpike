@@ -2,7 +2,7 @@
 module.exports = {
     outputDir: './wwwroot/dist',
     filenameHashing: false,
-
+    publicPath: "/Home",
     configureWebpack: {
         optimization: {
             splitChunks: false
@@ -13,13 +13,18 @@ module.exports = {
             }
             },
         devServer: {
+            publicPath: "/Home",
             proxy: {
-                "^/api": {
+                '^/Home/*': {
                     target: "http://localhost:44360",
                     changeOrigin: true,
                     logLevel: "debug"
                     
                 }
+            },
+            clientLogLevel: 'info',
+            watchOptions: {
+                poll: true
             }
         },
         devtool: 'eval-source-map'

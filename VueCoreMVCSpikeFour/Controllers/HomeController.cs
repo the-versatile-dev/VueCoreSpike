@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
-using VueCoreSpikeOne.Models;
+using VueCoreMVCSpikeFour.Models;
 
-namespace VueCoreSpikeOne.Controllers
+namespace VueCoreMVCSpikeFour.Controllers
 {
     public class HomeController : Controller
     {
@@ -30,12 +30,12 @@ namespace VueCoreSpikeOne.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult VueGrid()
+        public IActionResult Counter()
         {
             return View();
         }
 
-        public IActionResult Counter()
+        public IActionResult ShowCounter()
         {
             return View();
         }

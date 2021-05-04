@@ -26,7 +26,6 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
-*.vs
 
 # .NET Core
 project.lock.json
@@ -54,5 +53,4 @@ _ReSharper*/
 
 # Editor settings
 .vscode
-/wwwroot/dist/js/app.js
-/VueCoreMVCSpikeThree/npm
+/wwwroot/dist/*

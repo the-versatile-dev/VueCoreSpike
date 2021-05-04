@@ -5,7 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="src\components\admin\" />
+    <Compile Remove="src\components\admin\NewFolder\**" />
+    <Content Remove="src\components\admin\NewFolder\**" />
+    <EmbeddedResource Remove="src\components\admin\NewFolder\**" />
+    <None Remove="src\components\admin\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="src\components\admin\funnies\Jokes.vue" />
+    <None Remove="src\components\router\routes.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\components\admin\funnies\" />
+    <Folder Include="src\components\router\" />
+    <Folder Include="src\components\stores\" />
   </ItemGroup>
 
 </Project>

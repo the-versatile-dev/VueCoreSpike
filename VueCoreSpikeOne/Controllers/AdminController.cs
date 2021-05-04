@@ -12,5 +12,10 @@ namespace VueCoreSpikeOne.Controllers
         {
             return View();
         }
+
+        public IActionResult Jokes()
+        {
+            return View();
+        }
     }
 }

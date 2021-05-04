@@ -15,21 +15,23 @@
     </div>
 </template>
 
-<script>export default {
+<script>
+    export default {
         props: {
             user: Object
         }
-    }</script>
+    }
+</script>
 
 <style>
     .card {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
-        margin: 10px;
-        padding-bottom: 5px
+        margin: 10px !important;
+        padding: 5px !important;
     }
 
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
 </style>
