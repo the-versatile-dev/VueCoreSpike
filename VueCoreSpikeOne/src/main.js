@@ -3,7 +3,7 @@ import Vue from 'vue'
 import vuetify from './plugins/vuetify';
 import Vuex from "vuex";
 import router from 'vue-router'
-import store from './stores';
+//import { store } from './stores';
 
 Vue.config.productionTip = false;
 
@@ -18,7 +18,7 @@ new Vue({
     vuetify,
     Vuex,
     router, 
-    store
+  //  store
 }).$mount('#app');
 
 window.Vue = Vue;

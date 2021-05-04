@@ -1,8 +1,7 @@
 ﻿<template>
     <div style="margin-top:50px;">
         <div style="margin-bottom:20px;" >
-            My count is this : {{ count }}
-
+            My total is this : {{ count }}
         </div>
         <v-btn-toggle v-model="text" tile color="deep-purple accent-3" group>
             <v-btn value="left">
@@ -32,6 +31,3 @@
         }
     }
 </script>
-
-<style>
-</style>

@@ -1,24 +1,18 @@
 ﻿<template>
-    <div>      
+    <div>
         <h3 class="h-40 text-black">The current counter is : {{ count }}</h3>
     </div>
 </template>
 
 <script>
-// @ is an alias to /src
+    // @ is an alias to /src
 
     import { mapGetters } from "vuex";
-export default {
-        name: "Home",
-        computed: mapGetters(['getCounter']),
-        
-  methods: {
 
-  },
-  mounted() {
-      this.count = this.$store.getters.getCurrentCount;
-   }
-};
+    export default {
+        name: "Home",
+        computed: mapGetters(['getCounter'])
+    };
 </script>
 
 <style>

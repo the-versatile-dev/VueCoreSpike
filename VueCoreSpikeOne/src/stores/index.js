@@ -1,7 +1,7 @@
 ﻿import Vue from "vue";
 import Vuex from "vuex";
-import counter from "./modules/counter";
-import jokes from "./modules/jokes";
+import * as counter from "./modules/counter";
+import * as jokes from "./modules/jokes";
 
 
 Vue.use(Vuex);
@@ -15,3 +15,4 @@ export default new Vuex.Store({
     }
     
 });
+
