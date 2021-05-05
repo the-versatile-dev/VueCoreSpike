@@ -1,7 +1,7 @@
 import Vue from 'vue'
 //import App from './App.vue'
 import vuetify from './plugins/vuetify';
-import Vuex from "vuex";
+//import Vuex from "vuex";
 import router from 'vue-router'
 //import { store } from './stores';
 
@@ -16,7 +16,6 @@ Vue.component('users-card-grid', require('./components/admin/users/UserCardGrid.
 
 new Vue({
     vuetify,
-    Vuex,
     router, 
   //  store
 }).$mount('#app');

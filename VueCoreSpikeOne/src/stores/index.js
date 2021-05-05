@@ -1,18 +1,18 @@
-﻿import Vue from "vue";
-import Vuex from "vuex";
-import * as counter from "./modules/counter";
-import * as jokes from "./modules/jokes";
+﻿//import Vue from "vue";
+//import Vuex from "vuex";
+//import * as counter from "./modules/counter";
+//import * as jokes from "./modules/jokes";
 
 
-Vue.use(Vuex);
+//Vue.use(Vuex);
 
-//Create store
-export default new Vuex.Store({
+////Create store
+//export default new Vuex.Store({
     
-    modules: {
-        counter, 
-        jokes
-    }
+//    modules: {
+//        counter, 
+//        jokes
+//    }
     
-});
+//});
 

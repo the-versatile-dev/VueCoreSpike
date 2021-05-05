@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -6,9 +6,13 @@
 
   <ItemGroup>
     <Compile Remove="src\components\admin\NewFolder\**" />
+    <Compile Remove="src\stores\**" />
     <Content Remove="src\components\admin\NewFolder\**" />
+    <Content Remove="src\stores\**" />
     <EmbeddedResource Remove="src\components\admin\NewFolder\**" />
+    <EmbeddedResource Remove="src\stores\**" />
     <None Remove="src\components\admin\NewFolder\**" />
+    <None Remove="src\stores\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,7 +23,6 @@
   <ItemGroup>
     <Folder Include="src\components\admin\funnies\" />
     <Folder Include="src\components\router\" />
-    <Folder Include="src\components\stores\" />
   </ItemGroup>
 
 </Project>

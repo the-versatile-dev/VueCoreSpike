@@ -1,19 +1,19 @@
 ﻿
-const state = {
-    counter: 10
-};
+//const state = {
+//    counter: 10
+//};
 
-const getters = {
-    getCounter: state => state.counter
-};
+//const getters = {
+//    getCounter: state => state.counter
+//};
 
-const actions = {};
+//const actions = {};
 
-const mutations = {};
+//const mutations = {};
 
-export default {
-    state,
-    getters,
-    actions,
-    mutations
-}
+//export default {
+//    state,
+//    getters,
+//    actions,
+//    mutations
+//}

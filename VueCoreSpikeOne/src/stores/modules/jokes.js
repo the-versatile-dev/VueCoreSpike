@@ -1,25 +1,25 @@
-﻿//import axios from 'axios';
+﻿////import axios from 'axios';
 
-//const url = "https://icanhazdadjoke.com";
-//const headers = { Accept: "application/json" };
+////const url = "https://icanhazdadjoke.com";
+////const headers = { Accept: "application/json" };
 
-const state = {
-    currentJoke: 'har de har',
-    allJokes: []
-};
+//const state = {
+//    currentJoke: 'har de har',
+//    allJokes: []
+//};
 
-const getters = {
-    getCurrentJoke: state => state.currentJoke,
-    getAllJokes: state => state.allJokes
-};
+//const getters = {
+//    getCurrentJoke: state => state.currentJoke,
+//    getAllJokes: state => state.allJokes
+//};
 
-const actions = { };
+//const actions = { };
 
-const mutations = { };
+//const mutations = { };
 
-export default {
-    state,
-    getters,
-    actions,
-    mutations
-}
+//export default {
+//    state,
+//    getters,
+//    actions,
+//    mutations
+//}
