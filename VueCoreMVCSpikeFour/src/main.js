@@ -1,27 +1,29 @@
-import { createApp } from 'vue'
+import { createApp } from "vue";
 //import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
 
-//Vue.config.productionTip = false
 
 const app = createApp(App)
-    .use(store)
-    .use(router) 
+  .use(store)
+  .use(router)
 
-app.component('counter', require('./components/Counter.vue').default)
-app.component('view-counter', require('./components/ViewCounter.vue').default)
+app.config.productionTip = false;
+app.config.devtools = true;
+
+app.component("counter", require("./components/Counter.vue").default);
+app.component("view-counter", require("./components/ViewCounter.vue").default);
 //Vue.component('counter', require('./components/Counter.vue').default)
 //Vue.component('view-counter', require('./components/ViewCounter.vue').default)
 
-
-
-const vm = app.mount("#app")
+//console.log("Vue Version " + Vue.version );
+//debugger;
+app.mount("#app");
 
 //Vue.config.productionTip = false
 
-window.Vue = vm
+//window.Vue = app;
 
 //new Vue({
 //    Vuex,
