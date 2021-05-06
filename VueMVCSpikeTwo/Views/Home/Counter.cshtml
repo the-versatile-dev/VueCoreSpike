@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Counter Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Perform Counter</h1>
+
+    <div id="vueCounter">
+        <template>
+
+            <div style="margin-top:50px;">
+                <div style="margin-bottom:20px;">
+                    My total is this : {{ count }}
+                </div>
+
+                <button class="btn btn-primary" v-on:click="increment()">Number up!</button>
+
+                <button class="btn btn-primary" v-on:click="decrement()">Number down!</button>
+
+            </div>
+        </template>
+
+    </div>
+
+</div>
+@section scripts {
+
+    <partial name="_VueScript" />
+
+    <script>
+        var app = new Vue({
+            el: '#vueCounter',
+            data: function () {
+                return {
+                    count: 0
+                }
+            },
+            methods: {
+                increment() {
+                    this.count++;
+                },
+                decrement() {
+                    this.count--;
+                }
+            }
+
+        });
+
+                //app.mount("#vueMain");
+
+    </script>
+}
