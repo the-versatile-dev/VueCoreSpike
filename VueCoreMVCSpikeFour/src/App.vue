@@ -1,9 +1,7 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/DoCounter">Perform Counter</router-link> |
-    <router-link to="/ShowCounter"> Show Counter</router-link>
+  <div id="nav">    
+    <router-link to="/Counter">Perform Counter</router-link> |
+    <router-link to="/ViewCounter">Show Counter</router-link>
   </div>
   <router-view/>
 </template>

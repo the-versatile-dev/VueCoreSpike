@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2-VueCoreMVCSpikeTwo", "Vue
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3-VueCoreMVCSpikeThree", "VueCoreMVCSpikeThree\3-VueCoreMVCSpikeThree.csproj", "{50016BB5-A154-4157-853E-703D7D7C722A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VueCoreMVCSpikeFour", "VueCoreMVCSpikeFour\VueCoreMVCSpikeFour.csproj", "{C6F751C7-5FF1-4733-9D79-FC9CD944C6B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4-VueCoreMVCSpikeFour", "VueCoreMVCSpikeFour\4-VueCoreMVCSpikeFour.csproj", "{C6F751C7-5FF1-4733-9D79-FC9CD944C6B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
