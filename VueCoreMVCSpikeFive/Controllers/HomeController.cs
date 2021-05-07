@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using VueCoreMVCSpikeFive.Models;
 
 namespace VueCoreMVCSpikeFive.Controllers
@@ -32,6 +28,21 @@ namespace VueCoreMVCSpikeFive.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult Counter()
+        {
+            return View();
+        }
+
+        public IActionResult ShowCounter()
+        {
+            return View();
+        }
+
+        public IActionResult SimpleInput()
+        {
+            return View();
         }
     }
 }

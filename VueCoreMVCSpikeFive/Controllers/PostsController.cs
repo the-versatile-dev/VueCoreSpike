@@ -59,8 +59,11 @@ namespace VueCoreMVCSpikeFive.Controllers
         [HttpPost("")]
         public ActionResult Create([FromBody] BlogPost model)
         {
+            if (model == null)
+                model = new BlogPost();
+            
             model.Id = _postService.GetPosts().Max(x => x.Id) + 1;
-
+            
             _postService.Create(model);
 
             return Created("", model);
