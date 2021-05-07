@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-VueCoreMVCSpikeOne", "Vue
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2-VueCoreMVCSpikeTwo", "VueMVCSpikeTwo\2-VueCoreMVCSpikeTwo.csproj", "{32989586-D0AD-43BA-B758-1DF2430D34C9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VueCoreMVCSpikeThree", "VueCoreMVCSpikeThree\VueCoreMVCSpikeThree.csproj", "{50016BB5-A154-4157-853E-703D7D7C722A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3-VueCoreMVCSpikeThree", "VueCoreMVCSpikeThree\3-VueCoreMVCSpikeThree.csproj", "{50016BB5-A154-4157-853E-703D7D7C722A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VueCoreMVCSpikeFour", "VueCoreMVCSpikeFour\VueCoreMVCSpikeFour.csproj", "{C6F751C7-5FF1-4733-9D79-FC9CD944C6B4}"
 EndProject
