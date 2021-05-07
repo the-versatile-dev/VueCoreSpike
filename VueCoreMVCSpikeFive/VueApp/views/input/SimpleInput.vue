@@ -14,10 +14,12 @@
 </template>
 <script>
     export default {
-        data: {
-            form: {
-                value: ''
-            }
+        data() {
+            return {
+                form: {
+                    value: ''
+                }
+            }         
 
         }
     }
