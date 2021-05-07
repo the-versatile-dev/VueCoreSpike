@@ -1,6 +1,6 @@
 using System;
 
-namespace VueCoreSpikeOne.Models
+namespace VueCoreMVCSpikeOne.Models
 {
     public class ErrorViewModel
     {
