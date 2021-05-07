@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>a7a02942-8fc5-4e11-9771-88ab824a027a</UserSecretsId>
+    <AssemblyName>VueCoreMVCSpikeTwo</AssemblyName>
+    <RootNamespace>VueCoreMVCSpikeTwo</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

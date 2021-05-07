@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
-using VueMVCSpikeTwo.Models;
+using VueCoreMVCSpikeTwo.Models;
 
-namespace VueMVCSpikeTwo.Controllers
+namespace VueCoreMVCSpikeTwo.Controllers
 {
     public class HomeController : Controller
     {

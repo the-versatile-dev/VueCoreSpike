@@ -1,6 +1,6 @@
 using System;
 
-namespace VueMVCSpikeTwo.Models
+namespace VueCoreMVCSpikeTwo.Models
 {
     public class ErrorViewModel
     {
