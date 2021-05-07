@@ -54,3 +54,4 @@ _ReSharper*/
 # Editor settings
 .vscode
 /wwwroot/dist/*
+/wwwroot/js/*
