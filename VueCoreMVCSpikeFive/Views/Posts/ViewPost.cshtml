@@ -1,0 +1,19 @@
+@model BlogPost
+
+@{
+    ViewBag.Title = Model.Title;
+}
+
+<h1>@ViewBag.Title</h1>
+
+<div class="blog-post">
+    <h4>Posted @Model.PostDate.ToString("d")</h4>
+
+    <div class="content">
+        @Html.Raw(Model.Content)
+    </div>
+</div>
+
+<div class="mt-4">
+    <a href="/admin/posts/edit/@Model.Id">Edit Post</a>
+</p>

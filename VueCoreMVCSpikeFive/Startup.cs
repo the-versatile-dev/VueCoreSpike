@@ -3,10 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using VueCoreMVCSpikeFive.Services;
 
 namespace VueCoreMVCSpikeFive
 {
@@ -22,6 +19,9 @@ namespace VueCoreMVCSpikeFive
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddScoped<IPostService, PostService>();
+            services.AddScoped<ICommentService, CommentService>();
             services.AddControllersWithViews();
         }
 

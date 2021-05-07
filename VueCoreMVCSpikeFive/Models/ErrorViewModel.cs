@@ -1,5 +1,3 @@
-using System;
-
 namespace VueCoreMVCSpikeFive.Models
 {
     public class ErrorViewModel
