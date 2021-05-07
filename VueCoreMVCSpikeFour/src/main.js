@@ -12,8 +12,8 @@ const app = createApp(App)
 app.config.productionTip = false;
 app.config.devtools = true;
 
-app.component("counter", require("./components/Counter.vue").default);
-app.component("view-counter", require("./components/ViewCounter.vue").default);
+app.component("counter", require("./components/home/Counter.vue").default);
+app.component("view-counter", require("./components/home/ViewCounter.vue").default);
 //Vue.component('counter', require('./components/Counter.vue').default)
 //Vue.component('view-counter', require('./components/ViewCounter.vue').default)
 

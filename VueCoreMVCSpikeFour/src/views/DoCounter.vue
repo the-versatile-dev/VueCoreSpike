@@ -4,7 +4,7 @@
 
 <script>
 // @ is an alias to /src
-import Counter from '@/components/Counter.vue'
+import Counter from '@/components/home/Counter.vue'
 
 export default {
 name: 'DoCounter',

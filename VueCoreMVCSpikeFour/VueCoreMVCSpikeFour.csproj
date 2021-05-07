@@ -4,4 +4,11 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="src\views\**" />
+    <Content Remove="src\views\**" />
+    <EmbeddedResource Remove="src\views\**" />
+    <None Remove="src\views\**" />
+  </ItemGroup>
+
 </Project>
