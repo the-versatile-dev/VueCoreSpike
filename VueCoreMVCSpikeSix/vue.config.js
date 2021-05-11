@@ -21,15 +21,7 @@ module.exports = {
         entry: jsEntries,
         optimization: {
             splitChunks: false
-        },     
-        //resolve: {
-        //    extensions: ['.js', '.vue', '.json'],
-        //    alias: {
-        //        'vue$': 'vue/dist/vue.esm.js',
-        //        '@': path.join(__dirname, appBasePath)
-        //    }
-        //}
-       
+        }
     },
     pages: {
         contact: {
@@ -43,6 +35,9 @@ module.exports = {
         },
         showcounter: {
             entry: 'src/pages/counter/showcounter/index.js'
+        },
+        fullcounter: {
+            entry: 'src/pages/counter/fullcounter/fullcounter.js'
         },
         home: {
             entry: 'src/pages/home/index.js'

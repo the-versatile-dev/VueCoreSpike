@@ -1,7 +1,9 @@
-﻿
-import { createApp } from "vue";
+﻿import { createApp } from "vue";
 import App from './showcounter.vue'
-const app = createApp(App);
+import store from '../../../store'
+
+
+const app = createApp(App).use(store);
 
 app.config.productionTip = false;
 app.config.devtools = true;
