@@ -1,6 +1,6 @@
 ﻿<template>
     <div id="contact">
-        <h1>contact us comp</h1>
+        <h2>The Contact us Vue Component (embedded in razor page).</h2>
     </div>
 </template>
 <script>

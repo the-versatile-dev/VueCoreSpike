@@ -1,6 +1,6 @@
 ﻿<template>
     <div id="showCounter">
-        <h1>Show Counter Vue Component</h1>
+        <h2>Show Counter Vue Component</h2>
         <h3 class="h-40 text-black">The current counter is : {{ $store.state.count }}</h3>
     </div>   
 </template>

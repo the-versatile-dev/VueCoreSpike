@@ -1,6 +1,6 @@
 ﻿<template>
     <div id="counter">
-        <h2>Vue Counter Page, multi components using state.</h2>
+        <h2>Vue Counter Page, multi components using state (I hope).</h2>
     </div>
 
     <!--<div style="margin-bottom: 20px">
@@ -29,6 +29,6 @@
 </script>
 <style scoped>
     button {
-        margin: 10px;
+        margin: 25px;
     }
 </style>
