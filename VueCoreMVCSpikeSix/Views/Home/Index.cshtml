@@ -1,8 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Counter Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div id="app" class="text-center">
+    <about1-component></about1-component>
 </div>
+
+@section scripts{
+    <script src="@Url.Content("~/dist/js/home.js")">
+
+    </script>
+}

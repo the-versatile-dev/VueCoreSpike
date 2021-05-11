@@ -1,6 +1,11 @@
 .DS_Store
 node_modules
 /dist
+bin
+obj
+packages
+**/wwwroot/lib
+
 
 
 # local env files
@@ -21,3 +26,32 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/[Pp]ackages/repositories.config
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+*.nuget.targets
+
+
+# Editor settings
+.vscode
+/wwwroot/dist/*
+/wwwroot/js/*
