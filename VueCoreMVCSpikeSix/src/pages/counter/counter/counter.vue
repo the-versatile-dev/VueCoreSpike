@@ -1,12 +1,12 @@
 ﻿<template>
     <div id="counter">
-        <h1>mike vue comp</h1>
+        <h2>Vue Counter Page, multi components using state.</h2>
     </div>
-    <div style="margin-top: 50px">
-        <div style="margin-bottom: 20px">
-            My total is this : {{ $store.state.count }}
-        </div>
 
+    <!--<div style="margin-bottom: 20px">
+        My total is this : {{ $store.state.count }}
+    </div>-->
+    <div class="text-center" style="margin-top: 50px">
         <button class="btn btn-primary" @click="$store.dispatch('increaseCounter')">
             Number up!
         </button>
@@ -27,3 +27,8 @@
         name: "counter-component"
     }
 </script>
+<style scoped>
+    button {
+        margin: 10px;
+    }
+</style>
