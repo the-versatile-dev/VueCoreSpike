@@ -1,5 +1,6 @@
 import { createStore } from "vuex";
 import axios from "axios";
+import createMultiTabState from 'vuex-multi-tab-state';
 
 export default createStore({
     state: {
@@ -48,5 +49,8 @@ export default createStore({
         },
     },
     getters: {},
-    modules: {}
+    modules: {},
+    plugins: [
+        createMultiTabState({})
+    ]
 });
