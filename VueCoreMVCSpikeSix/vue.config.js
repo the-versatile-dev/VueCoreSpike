@@ -5,6 +5,11 @@
         optimization: {
             splitChunks: false
         }
+
+    },
+    publicPath: '/dist/',
+    css: {
+        extract: false
     },
     pages: {
         contact: {
@@ -24,6 +29,13 @@
         },
         home: {
             entry: 'src/pages/home/index.js'
+        },
+        posts: {
+            entry: 'src/pages/posts/posts.js',
+            chunks: 'all'
+        },
+        index: {
+            entry: 'src/main.js'
         }
 
     }
