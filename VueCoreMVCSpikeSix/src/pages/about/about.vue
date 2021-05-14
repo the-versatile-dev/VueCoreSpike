@@ -1,6 +1,6 @@
 ﻿<template>
     <div id="about">
-        <h1>An About us Vue component.</h1>
+        <h1>An About us Vue component my changes.</h1>
     </div>
 </template>
 <script>

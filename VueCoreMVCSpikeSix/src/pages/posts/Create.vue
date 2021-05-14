@@ -40,11 +40,13 @@
 </template>
 
 <script>
-    import Datepicker from 'vuejs-datepicker';
+    //import Datepicker from 'vuejs-datepicker';
+    import axios from 'axios';
 
     export default {
+        name: "create-post-component",
         components: {
-            Datepicker
+            // Datepicker
         },
         data() {
             return {
@@ -57,19 +59,29 @@
             }
         },
         methods: {
-            savePost() {
-                console.log(this.post);
-                this.$http.post('/posts', this.post).then(response => {
-                    if (response.status === 201) {
+            async savePost() {
+                //console.log(this.post);
+                //this.$http.post('/posts', this.post).then(response => {
+                //    if (response.status === 201) {
+                //        this.$router.push({ name: 'post-list' });
+                //    }
+                //})
+                await axios
+                    .post('/posts', this.post)
+                    .then(response => {
+                        console.log(response.status);
+
                         this.$router.push({ name: 'post-list' });
-                    }
-                })
+                    });             
+
+             
+
             },
-            suggestSlug() {
+            async suggestSlug() {
                 if (this.post.title !== '' && !this.post.slug) {
-                    this.$http.post('/posts/suggest-slug', { title: this.post.title }).then(response => {
-                        this.post.slug = response.data.slug;
-                    });
+                    //this.$http.post('/posts/suggest-slug', { title: this.post.title }).then(response => {
+                    //    this.post.slug = response.data.slug;
+                    //});
                 }
             }
         }

@@ -41,11 +41,12 @@
 
 <script>
     import axios from 'axios';
-    import Datepicker from 'vuejs-datepicker';
+    //import Datepicker from 'vuejs-datepicker';
 
     export default {
+        name: "edit-post-component",
         components: {
-            Datepicker
+      //      Datepicker
         },
         data() {
             return {

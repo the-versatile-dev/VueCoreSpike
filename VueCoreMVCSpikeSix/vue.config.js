@@ -32,7 +32,7 @@
         },
         posts: {
             entry: 'src/pages/posts/posts.js',
-            chunks: 'all'
+           // chunks: 'all'
         },
         index: {
             entry: 'src/main.js'

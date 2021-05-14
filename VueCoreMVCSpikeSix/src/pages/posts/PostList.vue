@@ -1,6 +1,5 @@
 <template>
-    <div id="post-list">
-        <h2>Posts</h2>
+    <div id="post-list">       
 
         <div class="mb-4">
             <router-link :to="{ name: 'new-post' }" class="btn btn-success">New Post</router-link>
