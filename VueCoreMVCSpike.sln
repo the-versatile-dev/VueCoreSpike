@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4-VueCoreMVCSpikeFour", "Vu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5-VueCoreMVCSpikeFive", "VueCoreMVCSpikeFive\5-VueCoreMVCSpikeFive.csproj", "{16776432-EB9A-4808-8D58-7702ACE4B400}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-VueCoreMVCSpikeSix", "VueCoreMVCSpikeSix\6-VueCoreMVCSpikeSix.csproj", "{77F36FF3-5617-4EFB-A521-A410A4940AA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6-VueCoreMVCSpikeSix", "VueCoreMVCSpikeSix\6-VueCoreMVCSpikeSix.csproj", "{77F36FF3-5617-4EFB-A521-A410A4940AA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7-VueCoreMVCSpikeSeven", "VueCoreMVCSpikeSeven\7-VueCoreMVCSpikeSeven.csproj", "{51DFC777-E427-4071-A75B-17F97552F14D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{77F36FF3-5617-4EFB-A521-A410A4940AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77F36FF3-5617-4EFB-A521-A410A4940AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77F36FF3-5617-4EFB-A521-A410A4940AA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51DFC777-E427-4071-A75B-17F97552F14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51DFC777-E427-4071-A75B-17F97552F14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51DFC777-E427-4071-A75B-17F97552F14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51DFC777-E427-4071-A75B-17F97552F14D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
