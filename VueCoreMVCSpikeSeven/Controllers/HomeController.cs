@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using VueCoreMVCSpikeSeven.Models;
 
 namespace VueCoreMVCSpikeSeven.Controllers
@@ -32,6 +28,11 @@ namespace VueCoreMVCSpikeSeven.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult ShowCounter()
+        {
+            return View();
         }
     }
 }

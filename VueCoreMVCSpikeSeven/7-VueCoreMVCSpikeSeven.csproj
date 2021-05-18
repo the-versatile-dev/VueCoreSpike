@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>VueCoreMVCSpikeSeven</AssemblyName>
+    <RootNamespace>VueCoreMVCSpikeSeven</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="evo-vue\src\pages\counter\fullcounter\**" />
+    <Content Remove="evo-vue\src\pages\counter\fullcounter\**" />
+    <EmbeddedResource Remove="evo-vue\src\pages\counter\fullcounter\**" />
+    <None Remove="evo-vue\src\pages\counter\fullcounter\**" />
+  </ItemGroup>
+
+</Project>
