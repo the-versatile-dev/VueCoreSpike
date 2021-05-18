@@ -1,10 +1,8 @@
-﻿import { createApp } from "vue";
+﻿import Vue from 'vue'
 import App from './fullcounter.vue'
 import store from '../../../store'
 
-const app = createApp(App).use(store);
-
-app.config.productionTip = false;
-app.config.devtools = true;
-
-app.mount("#fullCounterId");
+new Vue({
+    store,
+    render: h => h(App)
+}).$mount('#fullCounterId');

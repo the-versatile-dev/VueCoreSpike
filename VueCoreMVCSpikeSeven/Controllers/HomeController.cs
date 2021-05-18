@@ -34,5 +34,10 @@ namespace VueCoreMVCSpikeSeven.Controllers
         {
             return View();
         }
+
+        public IActionResult Counter()
+        {
+            return View();
+        }
     }
 }

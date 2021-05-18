@@ -13,4 +13,9 @@
     <None Remove="evo-vue\src\pages\counter\fullcounter\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="evo-vue\src\pages\counter\fullcounter\fullcounter.js" />
+    <None Include="evo-vue\src\pages\counter\fullcounter\fullcounter.vue" />
+  </ItemGroup>
+
 </Project>

@@ -18,5 +18,8 @@ module.exports = {
         showcounter: {
             entry: 'src/pages/counter/showcounter/index.js'
         },
+        fullcounter: {
+            entry: 'src/pages/counter/fullcounter/fullcounter.js'
+        },
     }
 }
