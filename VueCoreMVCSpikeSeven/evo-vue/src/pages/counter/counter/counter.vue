@@ -8,17 +8,17 @@
         My total is this : {{ $store.state.count }}
     </div>-->
         <div class="text-center" style="margin-top: 50px">
-            <button class="btn btn-primary" @click="$store.dispatch('increaseCounter')">
+            <button class="btn btn-primary" @click="$store.dispatch('countstate/increaseCounter')">
                 Number up!
             </button>
 
-            <button class="btn btn-primary" @click="$store.dispatch('decreaseCounter')">
+            <button class="btn btn-primary" @click="$store.dispatch('countstate/decreaseCounter')">
                 Number down!
             </button>
-            <button class="btn btn-primary" @click="$store.dispatch('randomAddNumber')">
+            <button class="btn btn-primary" @click="$store.dispatch('countstate/randomAddNumber')">
                 Number Random Add!
             </button>
-            <button class="btn btn-primary" @click="$store.dispatch('randomSubtractNumber')">
+            <button class="btn btn-primary" @click="$store.dispatch('countstate/randomSubtractNumber')">
                 Number Random Subtract!
             </button>
         </div>
