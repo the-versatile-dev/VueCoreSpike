@@ -1,18 +1,16 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import createMultiTabState from 'vuex-multi-tab-state';
-import countstateModule from './modules/countstate';
-
+import statecount from './modules/statecount';
 
 Vue.use(Vuex);
 
-const store = new Vuex.Store({
+export default new Vuex.Store({
     modules: {
-        countstate: countstateModule
+        statecount
     },
+    strict: process.env.NODE_ENV !== 'production',
     plugins: [
         createMultiTabState({})
     ]
 });
-
-export default store;

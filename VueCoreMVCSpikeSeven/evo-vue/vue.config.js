@@ -16,7 +16,7 @@ module.exports = {
     pages: {
 
         showcounter: {
-            entry: 'src/pages/counter/showcounter/index.js'
+            entry: 'src/pages/counter/showcounter/showcounter.js'
         },
         fullcounter: {
             entry: 'src/pages/counter/fullcounter/fullcounter.js'

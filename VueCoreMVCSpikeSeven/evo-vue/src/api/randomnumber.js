@@ -6,7 +6,7 @@ export default {
     randomNumber() {
         axios.get(ROOT_URL)
             .then((response) => {
-                console.log(response.data);
+                console.log("api data : " + response.data);
                 return response.data;
             });
     }

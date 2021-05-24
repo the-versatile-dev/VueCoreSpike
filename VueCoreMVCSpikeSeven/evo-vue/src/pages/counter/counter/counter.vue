@@ -4,29 +4,37 @@
             <h2>Vue Counter Page, multi components using state (I hope).</h2>
         </div>
 
-        <!--<div style="margin-bottom: 20px">
-        My total is this : {{ $store.state.count }}
-    </div>-->
+        <div style="margin-bottom: 20px">
+        My total is this : {{ mycounter }}
+    </div>
         <div class="text-center" style="margin-top: 50px">
-            <button class="btn btn-primary" @click="$store.dispatch('countstate/increaseCounter')">
+            <button class="btn btn-primary" @click="$store.dispatch('statecount/increaseCounter')">
                 Number up!
             </button>
 
-            <button class="btn btn-primary" @click="$store.dispatch('countstate/decreaseCounter')">
+            <button class="btn btn-primary" @click="$store.dispatch('statecount/decreaseCounter')">
                 Number down!
             </button>
-            <button class="btn btn-primary" @click="$store.dispatch('countstate/randomAddNumber')">
+            <button class="btn btn-primary" @click="$store.dispatch('statecount/randomAddNumber')">
                 Number Random Add!
             </button>
-            <button class="btn btn-primary" @click="$store.dispatch('countstate/randomSubtractNumber')">
+            <button class="btn btn-primary" @click="$store.dispatch('statecount/randomSubtractNumber')">
                 Number Random Subtract!
             </button>
         </div>
     </div>
 </template>
 <script>
+
+    import { mapState } from 'vuex'
+
+
     export default {
-        name: "counter-component"
+        name: "counter-component",
+        computed: mapState({
+            mycounter: state => state.statecount
+        })
+        //methods: mapActions('countstateModule', ['addProductToCart']),
     }
 </script>
 <style scoped>
