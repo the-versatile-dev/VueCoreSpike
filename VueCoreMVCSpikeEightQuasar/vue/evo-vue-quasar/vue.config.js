@@ -12,11 +12,11 @@ module.exports = {
         devtool: 'source-map'
     },
     publicPath: '/dist/',
-    pages: {
-        basicinput: {
-            entry: 'src/pages/input/basic-input.js'
-        }
-    },
+    //pages: {
+    //    basicinput: {
+    //        entry: 'src/pages/input/basic-input.js'
+    //    }
+    //},
     pluginOptions: {
         quasar: {
             importStrategy: 'kebab',
