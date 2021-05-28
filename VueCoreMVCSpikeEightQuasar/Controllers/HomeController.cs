@@ -35,6 +35,11 @@ namespace VueCoreMVCSpikeEightQuasar.Controllers
             return View();
         }
 
+        public IActionResult QuasarCounter()
+        {
+            return View();
+        }
+
 
 
     }
