@@ -1,36 +1,38 @@
 ﻿<template>
-    <div>
-        <div id="counter">
-            <h2>Vue Counter Page, multi components using state (I hope).</h2>
-        </div>
+    <div class="q-pa-md">
+        <q-layout view="lHh lpr lFf" container style="height: 500px" class="shadow-2 rounded-borders">
+            <q-header elevated>
+                <q-toolbar>
+                    <q-avatar>
+                        <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+                    </q-avatar>
 
-        <div style="margin-bottom: 20px">
-            My total is this : {{ mycounter }}
-        </div>
-        <div class="text-center" style="margin-top: 50px">
-            <button class="btn btn-primary" @click="$store.dispatch('statecount/increaseCounter')">
-                Number up!
-            </button>
+                    <q-toolbar-title>
+                        Vue Counter Page, multi components using state (I hope) with Quasar.
+                    </q-toolbar-title>
 
-            <button class="btn btn-primary" @click="$store.dispatch('statecount/decreaseCounter')">
-                Number down!
-            </button>
-            <button class="btn btn-primary" @click="$store.dispatch('statecount/randomAddNumber')">
-                Number Random Add!
-            </button>
-            <button class="btn btn-primary" @click="$store.dispatch('statecount/randomSubtractNumber')">
-                Number Random Subtract!
-            </button>
-        </div>
-        <div class="q-pa-md q-gutter-y-md column items-start">
-            <q-btn-group push>
-                <q-btn color="yellow" glossy text-color="black" push label="First" icon="verified_user" />
-                <q-btn color="amber" glossy text-color="black" push label="Second" />
-                <q-btn color="orange" glossy text-color="black" push label="Third" />
-            </q-btn-group>
-        </div>
+                    <q-btn flat round dense icon="whatshot" />
+                </q-toolbar>
+            </q-header>
+          
+            <q-page-container>
+                <q-page padding>
+                    <div class="q-pa-md q-gutter-y-md column items-start text-center">
+                        <div style="margin-bottom: 20px">
+                            My total is this : {{ mycounter }}
+                        </div>
+                        <q-btn-group push>
+                            <q-btn color="yellow" glossy text-color="black" push label="Number up!" icon="verified_user" @click="$store.dispatch('increaseCounter')" />
+                            <q-btn color="amber" glossy text-color="black" push label=" Number down!" @click="$store.dispatch('decreaseCounter')" />
+                            <q-btn color="orange" glossy text-color="black" push label="Number Random Add!" @click="$store.dispatch('randomAddNumber')" />
+                            <q-btn color="orange" glossy text-color="black" push label="Number Random Subtract!" @click="$store.dispatch('randomSubtractNumber')" />
+                        </q-btn-group>
+                    </div>
+                </q-page>
+            </q-page-container>
+        </q-layout>
     </div>
-   
+
 </template>
 <script>
 
@@ -40,7 +42,7 @@
     export default {
         name: "counter-component",
         computed: mapState({
-            mycounter: state => state.statecount
+            mycounter: state => state.count
         })
         //methods: mapActions('countstateModule', ['addProductToCart']),
     }
